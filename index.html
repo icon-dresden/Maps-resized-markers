@@ -20,7 +20,7 @@
 	var maxZoom = 17;
 	var minZoom = 15;
 	
-	var iconBase = '/Archive/markers/medium/';
+	var iconBase = 'markers/medium/';
 	
 	
 	var nla = {
@@ -101,12 +101,12 @@
 			
 			if (zoom  < minZoom) {
 				map.setZoom(minZoom);
-				var url = url.replace('/Archive/markers/medium/', '/Archive/markers/small/');
+				var url = url.replace('markers/medium/', 'markers/small/');
 				//console.log(url);
 			}
 			else if (zoom  > maxZoom) {
 				map.setZoom(maxZoom);
-				var url = url.replace('/Archive/markers/medium/', '/Archive/markers/large/');
+				var url = url.replace('markers/medium/', 'markers/large/');
 				console.log(url);
 			}
 			else {
